@@ -12,6 +12,7 @@ namespace SampleAPI.Data
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<EmployeeModel> tblEmployee { get; set; }
+        public DbSet<ProductModel> tblProduct { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
